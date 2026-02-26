@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SL - Clinical Luxury Skincare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cormorant:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    media="print"
+    onload="this.media='all'; this.setAttribute('data-font-loaded', 'true'); sessionStorage.setItem('fonts-loaded', 'true');"
+    onerror="document.documentElement.classList.add('fonts-unavailable'); console.warn('Font loading failed, using system fonts');">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cormorant:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
+  </noscript>
+  <script>
+    (function () {
+      if (!navigator.onLine) { document.documentElement.classList.add('fonts-unavailable'); return; }
+      if (sessionStorage.getItem('fonts-loaded') !== 'true') document.documentElement.classList.add('fonts-unavailable');
+      if (navigator.connection && navigator.connection.saveData) document.documentElement.classList.add('fonts-unavailable');
+    })();
+  </script>
+  <link href="/src/main.css" rel="stylesheet" />
+  <style>
+    /* Hide Google Translate chrome/banners and widget completely since we use a custom React proxy button */
+    .goog-te-banner-frame,
+    .goog-te-balloon-frame,
+    #goog-gt-tt,
+    .goog-tooltip,
+    .goog-tooltip:hover,
+    .VIpgJd-ZVi9od-ORHb-OEVmcd,
+    #google_translate_element {
+      display: none !important;
+    }
+
+    body {
+      top: 0 !important;
+      position: static !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="google_translate_element" class="notranslate" translate="no"></div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,es,fr,de,it,nl,pl',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

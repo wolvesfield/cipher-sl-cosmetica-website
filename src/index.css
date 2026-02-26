@@ -1,0 +1,202 @@
+@import 'tailwindcss';
+@import "tw-animate-css";
+
+@layer base {
+  * {
+    @apply border-border
+  }
+}
+
+:root {
+  --background: oklch(0.97 0.005 230);
+  --foreground: oklch(0.25 0.03 240);
+  
+  --card: oklch(0.99 0.002 240);
+  --card-foreground: oklch(0.25 0.03 240);
+  
+  --popover: oklch(0.99 0.002 240);
+  --popover-foreground: oklch(0.25 0.03 240);
+  
+  --primary: oklch(0.50 0.12 230);
+  --primary-foreground: oklch(0.99 0.002 240);
+  
+  --secondary: oklch(0.88 0.04 240);
+  --secondary-foreground: oklch(0.30 0.03 240);
+  
+  --muted: oklch(0.92 0.015 240);
+  --muted-foreground: oklch(0.50 0.02 240);
+  
+  --accent: oklch(0.65 0.12 200);
+  --accent-foreground: oklch(0.99 0.002 240);
+  
+  --destructive: oklch(0.60 0.22 20);
+  --destructive-foreground: oklch(0.99 0.002 240);
+  
+  --border: oklch(0.85 0.015 240);
+  --input: oklch(0.85 0.015 240);
+  --ring: oklch(0.50 0.12 230);
+  
+  --radius: 0.5rem;
+  
+  --slate-dark: oklch(0.30 0.03 240);
+  --sand-light: oklch(0.94 0.015 60);
+  --gray-medium: oklch(0.55 0.00 0);
+  --teal-deep: oklch(0.60 0.10 210);
+  --teal-light: oklch(0.75 0.08 210);
+  --terracotta: oklch(0.58 0.10 40);
+  --skin-light: oklch(0.88 0.05 50);
+  --skin-medium: oklch(0.75 0.08 45);
+  --skin-tan: oklch(0.65 0.09 40);
+  --skin-rose: oklch(0.82 0.06 30);
+  --skin-peach: oklch(0.85 0.07 55);
+  --font-sans: Outfit, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: Cormorant, 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  --font-mono: 'Fira Code', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  --chart-1: oklch(0.50 0.12 230);
+  --chart-2: oklch(0.65 0.12 200);
+  --chart-3: oklch(0.60 0.18 270);
+  --chart-4: oklch(0.55 0.10 230);
+  --chart-5: oklch(0.70 0.14 290);
+  --sidebar: oklch(0.97 0.005 230);
+  --sidebar-foreground: oklch(0.25 0.03 240);
+  --sidebar-primary: oklch(0.50 0.12 230);
+  --sidebar-primary-foreground: oklch(0.99 0.002 240);
+  --sidebar-accent: oklch(0.88 0.04 240);
+  --sidebar-accent-foreground: oklch(0.30 0.03 240);
+  --sidebar-border: oklch(0.85 0.015 240);
+  --sidebar-ring: oklch(0.50 0.12 230);
+  --shadow-color: oklch(0.50 0.12 230);
+  --shadow-opacity: 0.12;
+  --shadow-blur: 24px;
+  --shadow-spread: 0px;
+  --shadow-offset-x: 0px;
+  --shadow-offset-y: 6px;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --color-slate-dark: var(--slate-dark);
+  --color-sand-light: var(--sand-light);
+  --color-gray-medium: var(--gray-medium);
+  --color-teal-deep: var(--teal-deep);
+  --color-teal-light: var(--teal-light);
+  --color-terracotta: var(--terracotta);
+  --color-skin-light: var(--skin-light);
+  --color-skin-medium: var(--skin-medium);
+  --color-skin-tan: var(--skin-tan);
+  --color-skin-rose: var(--skin-rose);
+  --color-skin-peach: var(--skin-peach);
+  
+  --radius-sm: calc(var(--radius) * 0.75);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) * 1.25);
+  --radius-xl: calc(var(--radius) * 1.5);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-full: 9999px;
+  
+  --font-family-playfair: 'Playfair Display', serif;
+  --font-family-inter: 'Inter', sans-serif;
+  
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+body {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  color: var(--slate-dark);
+  letter-spacing: -0.02em;
+}
+
+.fonts-unavailable body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+.fonts-unavailable h1,
+.fonts-unavailable h2,
+.fonts-unavailable h3,
+.fonts-unavailable h4,
+.fonts-unavailable h5,
+.fonts-unavailable h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-playfair {
+  font-family: var(--font-serif), 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-inter {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@supports (font-variation-settings: normal) {
+  .fonts-unavailable body,
+  .fonts-unavailable h1,
+  .fonts-unavailable h2,
+  .fonts-unavailable h3,
+  .fonts-unavailable h4,
+  .fonts-unavailable h5,
+  .fonts-unavailable h6 {
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@media (prefers-reduced-data: reduce) {
+  html {
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+    --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}

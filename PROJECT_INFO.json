@@ -1,0 +1,96 @@
+{
+  "name": "SL Cosmetica - Clinical Luxury Skincare Platform",
+  "description": "Advanced e-commerce platform showcasing MTRX Pharmaceutical's CBD-enhanced dermocosmetic line with AI consultation, 3D visualization, and clinical data transparency",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/Website-SL-Cosmetica.git"
+  },
+  "keywords": [
+    "skincare",
+    "ecommerce",
+    "cbd-cosmetics",
+    "clinical-luxury",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "three-js",
+    "ai-chatbot",
+    "latam",
+    "mtrx-pharmaceutical",
+    "dermocosmetics",
+    "virtual-try-on",
+    "3d-visualization"
+  ],
+  "features": [
+    "AI-powered skincare consultant",
+    "Interactive 3D product viewer",
+    "Webcam-based virtual try-on",
+    "Product comparison tool",
+    "Ingredient constellation map",
+    "Clinical data visualization",
+    "Advanced filtering and search",
+    "Multi-language support (EN/ES)",
+    "Mobile-first responsive design"
+  ],
+  "technology": {
+    "frontend": "React 19.2.0",
+    "language": "TypeScript 5.7.3",
+    "styling": "Tailwind CSS 4.1.17",
+    "animation": "Framer Motion 12.23.25",
+    "3d": "Three.js 0.175.0",
+    "charts": "Recharts 2.15.4",
+    "ui": "Shadcn/ui v4",
+    "build": "Vite 7.2.6"
+  },
+  "target_market": {
+    "region": "Latin America (LATAM)",
+    "countries": [
+      "Brazil",
+      "Mexico",
+      "Colombia",
+      "Chile",
+      "Peru",
+      "Argentina",
+      "Ecuador",
+      "Uruguay",
+      "Costa Rica",
+      "Panama"
+    ],
+    "demographic": "18-35 year-old prejuvenation consumers",
+    "secondary": "Male BroBeauty segment"
+  },
+  "products": {
+    "categories": [
+      "Anti-Aging Facial Creams (14 formulas)",
+      "Anti-Aging Body Care (1 product)",
+      "Anti-Aging Hair & Scalp Care (2 products)"
+    ],
+    "total_skus": 17
+  },
+  "deployment": {
+    "recommended_platforms": [
+      "Vercel",
+      "Netlify",
+      "GitHub Pages",
+      "AWS Amplify"
+    ],
+    "build_command": "npm run build",
+    "output_directory": "dist"
+  },
+  "credits": {
+    "copyright": "© 2026 SL Cosmetica. All rights reserved.",
+    "developed_by": [
+      "Wolvesfield Inc",
+      "Gen X Intel",
+      "Legacy Foundation"
+    ]
+  },
+  "license": "MIT (Spark Template)",
+  "documentation": [
+    "README.md",
+    "PRD.md",
+    "DEPLOYMENT_GUIDE.md",
+    "QUICKSTART.md"
+  ]
+}
