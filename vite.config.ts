@@ -10,7 +10,7 @@ const projectRoot = process.env.PROJECT_ROOT || __dirname
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/cipher-sl-cosmetica-website/',
+  base: '/',
   plugins: [
     react(),
     tailwindcss(),
